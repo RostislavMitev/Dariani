@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informative site for hairdressing studio Dariani">
+    <meta name="keywords" content="Dariani, hair, hairdresser, haircut, studio">
+    <meta name="author" content="Rostislav Mitev & Simeon Simeonov">
+    <title>Dariani</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn SC">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="startup">
+        <header class="header">
+            <a href="#startup">
+                <img class="header--logo" src="./images/logo.png">
+            </a>
+            <nav class="header--navigation">
+                <a class="navigation--item" href="#startup"><i class="fas fa-home"></i> Начало<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#events"><i class="fas fa-calendar-alt"></i> Събития<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#services"><i class="fas fa-money-check"></i> Услуги<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#partners"><i class="fas fa-handshake"></i> Партньори<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#clients"><i class="fas fa-users"></i> Клиенти<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#about-us"><i class="fas fa-info-circle"></i> За нас<div class="border-effect"></div></a>
+                <a class="navigation--item" href="#contacts"><i class="fas fa-phone-volume"></i> Контакти<div class="border-effect"></div></a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="section">
+                <h1 class="section--title section--title__even">Фризьорски салон Dariani</h1>
+                <div id="slider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./images/new-year.jpg" alt="Първи слайд">
+                            <div class="carousel-caption">
+                                <h5>Новогодишно парти</h5>
+                                <p>Кога: 31/12/2020г.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/birthday.jpg" alt="Втори слайд">
+                            <div class="carousel-caption">
+                                <h5>Рожден ден на салона</h5>
+                                <p>Кога: 12/01/2021г.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./images/haircut-discount.jpg" alt="Трети слайд">
+                            <div class="carousel-caption">
+                                <h5>Намаление от 50% на прически</h5>
+                                <p>Кога: 01/02/2021г.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Назад</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Напред</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="events" class="section">
+                <h2 class="section--title section--title__odd">Събития</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/new-year.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Новогодишно парти</h5>
+                            <p class="card-text">Заповядайте на новогодишното парти на Dariani, обещаваме Ви много забавление и незабравимо преживяване.</p>
+                            <p class="card-text"><small class="text-muted">31/12/2020г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="w-100 d-md-block d-lg-none mt-xs-0 mt-sm-4 mt-lg-0"></div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/birthday.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Рожден ден на салона</h5>
+                            <p class="card-text">На 12/01/2021г. Dariani навършва 10 години и ще отпразнува юбилея си с Вас. Заповядайте, очакваме Ви.</p>
+                            <p class="card-text"><small class="text-muted">12/01/2021г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="w-100 d-md-block d-lg-none mt-xs-0 mt-sm-4 mt-lg-0"></div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/haircut-discount.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Намаление от 50% на прически</h5>
+                            <p class="card-text">Само на 1 февруари Dariani предоставя уникална промоция на всички прически в размер на 50%.</p>
+                            <p class="card-text"><small class="text-muted">01/02/2021г.</small></p>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2 class="section--title section--title__even">Услуги</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Мъжко подстригване - <span class="font-weight-bold">10лв</span></li>
+                            <li class="list-group-item">Дамско подстригване - <span class="font-weight-bold">15лв</span></li>
+                            <li class="list-group-item">Сешоар - <span class="font-weight-bold">15лв</span></li>
+                            <li class="list-group-item">Сешоар + преса - <span class="font-weight-bold">25лв</span></li>
+                            <li class="list-group-item">Официална прическа - <span class="font-weight-bold">85лв</span></li>
+                            <li class="list-group-item">Измиване на коса - <span class="font-weight-bold">2лв</span></li>
+                            <li class="list-group-item">Боядисване с боя на салона + сешоар - <span class="font-weight-bold">50лв</span></li>
+                            <li class="list-group-item">Кичури (1 цвят) - <span class="font-weight-bold">40лв</span></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Кичури (2 или повече цвята) - <span class="font-weight-bold">70лв</span></li>
+                            <li class="list-group-item">Балеаж - <span class="font-weight-bold">80лв</span></li>
+                            <li class="list-group-item">Оформяне с преса - <span class="font-weight-bold">30лв</span></li>
+                            <li class="list-group-item">Оформяне с маша - <span class="font-weight-bold">30лв</span></li>
+                            <li class="list-group-item">Оформяне с ретропреса - <span class="font-weight-bold">30лв</span></li>
+                            <li class="list-group-item">Кератинова терапия - <span class="font-weight-bold">90лв</span></li>
+                            <li class="list-group-item">Арганова терапия - <span class="font-weight-bold">25лв</span></li>
+                            <li class="list-group-item">Ампула за коса 1 брой + масаж - <span class="font-weight-bold">10лв</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" class="section">
+                <h2 class="section--title section--title__odd">Партньори</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/alfaparf.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Alfaparf Milano</h5>
+                            <p class="card-text"><small class="text-muted">Партньори от: 10/01/2010г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/taft.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Schwarzkopf Taft</h5>
+                            <p class="card-text"><small class="text-muted">Партньори от: 01/05/2012г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="w-100 d-md-block d-lg-none mt-xs-0 mt-sm-4 mt-lg-0"></div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/palette.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Schwarzkopf Palette</h5>
+                            <p class="card-text"><small class="text-muted">Партньори от: 02/10/2014г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/wellaton.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Wellaton</h5>
+                            <p class="card-text"><small class="text-muted">Партньори от: 06/10/2017г.</small></p>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+            <section id="clients" class="section">
+                <h2 class="section--title section--title__even">Клиенти</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/varna-beuty.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Студио за красота Varna Beuty</h5>
+                            <p class="card-text"><small class="text-muted">Лоялни клиенти от: 10/01/2010г.</small></p>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/wedding-center.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Сватбен център Варна</h5>
+                            <p class="card-text"><small class="text-muted">Лоялни клиенти от: 01/05/2012г.</small></p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="card-deck mt-xs-0 mt-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/extreme-advertising.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Рекламен център Екстрийм</h5>
+                            <p class="card-text"><small class="text-muted">Лоялни клиенти от: 15/07/2015г.</small></p>
+                        </div> 
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./images/sitel.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Кол център Sitel Group</h5>
+                            <p class="card-text"><small class="text-muted">Лоялни клиенти от: 27/09/2018г.</small></p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-us" class="section">
+                <h2 class="section--title section--title__odd">За нас</h2>
+                <div class="row no-gutters">
+                    <p class="col-md-6 pl-2 pr-3">Заповядайте във фризьорски салон Dariani. За Вас врати отворихме през далечната 2008 г. и до сега нашият стремеж е да сбъдваме Вашите мечти за страхотна визия. Екипът ни от професионалисти ще Ви посрещне с усмивка и ще Ви даде най-добрите съвети за модерните тенденции в стайлинга. В уютния ни салон ще се отпуснете и ще се пренесете в един нов и вълнуващ свят на красота и изящество. Гарантираме за качеството на услугите ни, а личното ни отношение към всеки клиент ще Ви спечели завинаги. Подарете си време и заповядайте при нас. Очакваме Ви!</p>
+                    <div class="col-md-6 pl-3">
+                        <h5 class="font-weight-bold"><i class="fas fa-calendar-week"></i> Работно време</h5>
+                        <ul class="ml-3">
+                            <li>Понеделник: 10:00 - 18:00</li>
+                            <li>Вторник: почивен ден</li>
+                            <li>Сряда: 10:00 - 18:00</li>
+                            <li>Четвъртък: 10:00 - 18:00</li>
+                            <li>Петък: 10:00 - 18:00</li>
+                            <li>Събота: 10:00 - 18:00</li>
+                            <li>Неделя: 10:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <h5 class="font-weight-bold ml-2"><i class="fas fa-images"></i> Галерия</h5>
+                <div class="row no-gutters gallery">
+                    <div class="col-md-3 px-md-2">
+                        <a data-fancybox="gallery" href="./images/studio1.jpg">
+                            <img src="./images/studio1.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-md-2">
+                        <a data-fancybox="gallery" href="./images/studio2.jpg">
+                            <img src="./images/studio2.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-md-2">
+                        <a data-fancybox="gallery" href="./images/studio3.jpg">
+                            <img src="./images/studio3.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-3 px-md-2">
+                        <a data-fancybox="gallery" href="./images/studio4.jpg">
+                            <img src="./images/studio4.jpg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="section">
+                <h2 class="section--title section--title__even">Контакти</h2>
+                <div class="row no-gutters">
+                    <div class="col-md-6 pr-3">
+                        <form class="card p-2 bg-email">
+                            <div class="form-group row no-gutters">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-at"></i></div>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="Имейл">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row no-gutters">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Име">
+                                </div>
+                            </div>
+
+                            <div class="form-group row no-gutters">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Фамилия">
+                                </div>
+                            </div>
+
+                            <div class="form-group row no-gutters">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="far fa-keyboard"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Тема">
+                                </div>
+                            </div>
+
+                            <div class="form-group row no-gutters">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-comment-dots"></i></div>
+                                    </div>
+                                    <textarea class="form-control" placeholder="Съобщение"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row no-gutters justify-content-center mb-0">
+                                <button type="submit" class="button pointer"><i class="fas fa-paper-plane"></i> Изпрати<div class="border-effect"></div></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 pl-3">
+                        <img id="map" class="pointer w-100" src="./images/map.png" alt="Map">
+                        <p class="mt-3"><i class="fas fa-phone-alt"></i> 089 457 8962</p>
+                        <p><i class="fas fa-envelope"></i> dariani@hairdresser.com</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section">
+            <section id="navigation-container">
+                <h6 class="font-weight-bold">Бързи връзки</h6>
+                <nav class="footer--navigation">
+                    <div class="mr-3">
+                        <a class="navigation--item" href="#startup"><i class="fas fa-home"></i> Начало</a>
+                        <a class="navigation--item" href="#events"><i class="fas fa-calendar-alt"></i> Събития</a>
+                        <a class="navigation--item" href="#services"><i class="fas fa-money-check"></i> Услуги</a>
+                    </div>
+                    <div class="mr-3">
+                        <a class="navigation--item" href="#partners"><i class="fas fa-handshake"></i> Партньори</a>
+                        <a class="navigation--item" href="#clients"><i class="fas fa-users"></i> Клиенти</a>
+                    </div>
+                    <div class="mr-3">
+                        <a class="navigation--item" href="#about-us"><i class="fas fa-info-circle"></i> За нас</a>
+                        <a class="navigation--item" href="#contacts"><i class="fas fa-phone-volume"></i> Контакти</a>
+                    </div>
+                </nav>
+            </section>
+            <div class="vl"></div>
+            <section>
+                <h6 class="font-weight-bold">Социални мрежи</h6>
+                <p class="social-networks">
+                    <i class="fab fa-facebook-square pointer mr-2"></i>
+                    <i class="fab fa-instagram pointer mr-2"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </p>
+            </section>
+            <div class="vl"></div>
+            <section>
+                <p class="font-italic">&copy; Всички права са запазени.</p>
+            </section>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
